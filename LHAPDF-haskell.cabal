@@ -1,5 +1,5 @@
 Name:		LHAPDF-haskell
-Version:	0.0
+Version:	0.0.1
 Synopsis:	LHAPDF binding for Haskell 
 Description: 	LHAPDF binding for Haskell   
 License: 	GPL-3 
