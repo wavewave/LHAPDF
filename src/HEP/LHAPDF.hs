@@ -4,7 +4,8 @@ module HEP.LHAPDF (
   alphasPDF, 
   numberPDF, 
   initPDF, 
-  xfx
+  xfx, 
+  anti
   ) where
 
 import HEP.LHAPDF.Internal 
