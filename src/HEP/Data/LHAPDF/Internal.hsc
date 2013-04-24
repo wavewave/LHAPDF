@@ -1,6 +1,20 @@
 {-# LANGUAGE ForeignFunctionInterface #-}
 
-module HEP.LHAPDF.Internal where
+-----------------------------------------------------------------------------
+-- |
+-- Module      : HEP.Data.LHAPDF.Internal
+-- Copyright   : (c) 2011, 2013 Ian-Woo Kim
+--
+-- License     : GPL-3
+-- Maintainer  : Ian-Woo Kim <ianwookim@gmail.com>
+-- Stability   : experimental
+-- Portability : GHC
+--
+-- Internal functions for Haskell interface to LHAPDF library
+-- 
+-----------------------------------------------------------------------------
+
+module HEP.Data.LHAPDF.Internal where
 
 import Foreign.C
 import Foreign.C.String

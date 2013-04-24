@@ -1,4 +1,19 @@
-module HEP.LHAPDF (
+-----------------------------------------------------------------------------
+-- |
+-- Module      : HEP.Data.LHAPDF
+-- Copyright   : (c) 2011, 2013 Ian-Woo Kim
+--
+-- License     : GPL-3
+-- Maintainer  : Ian-Woo Kim <ianwookim@gmail.com>
+-- Stability   : experimental
+-- Portability : GHC
+--
+-- Haskell interface to LHAPDF (Les Houches Accord Parton Distribution 
+-- Function) library
+--
+-----------------------------------------------------------------------------
+
+module HEP.Data.LHAPDF (
   PartonType(..),
   initPDFSet,   
   alphasPDF, 
@@ -8,7 +23,7 @@ module HEP.LHAPDF (
   anti
   ) where
 
-import HEP.LHAPDF.Internal 
+import HEP.Data.LHAPDF.Internal 
 
 import Foreign.C
 import Foreign.C.String

@@ -1,5 +1,5 @@
-Name:		LHAPDF-haskell
-Version:	0.0.1
+Name:		LHAPDF
+Version:	0.0.999
 Synopsis:	LHAPDF binding for Haskell 
 Description: 	LHAPDF binding for Haskell   
 License: 	GPL-3 
@@ -7,24 +7,24 @@ License-file:	LICENSE
 Author:		Ian-Woo Kim
 Maintainer: 	Ian-Woo Kim <ianwookim@gmail.com>
 Build-Depends:	base>4
-Build-Type: 	Simple
+Build-Type: 	Custom
 
 hs-source-dirs: src
 ghc-options: 	-Wall -O2 -threaded -funbox-strict-fields -fno-warn-unused-do-bind
 ghc-prof-options: -caf-all -auto-all
 
 Exposed-Modules: 
-		 HEP.LHAPDF
-		 HEP.LHAPDF.Internal
+		 HEP.Data.LHAPDF
+		 HEP.Data.LHAPDF.Internal
 
 Extra-source-files: csrc/lhapdf.h
-extra-lib-dirs: /home/wavewave/nfs/montecarlo/usr/lib
-extra-libraries: stdc++, LHAPDF
+-- extra-lib-dirs: /home/wavewave/nfs/montecarlo/usr/lib
+-- extra-libraries: stdc++, LHAPDF
 
 Extensions: 	 ForeignFunctionInterface
 include-dirs:	 csrc
-		 /home/wavewave/nfs/montecarlo/usr/include
-		 /home/wavewave/nfs/montecarlo/usr/include/LHAPDF
+-- 		 /home/wavewave/nfs/montecarlo/usr/include
+--		 /home/wavewave/nfs/montecarlo/usr/include/LHAPDF
 
 Install-includes: lhapdf.h
 C-sources:       csrc/lhapdf.cpp
